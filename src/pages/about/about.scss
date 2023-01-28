@@ -24,8 +24,6 @@
    font-size: 1.3rem;
 }
 
-
-
 .about__me{
   width: 25rem;
   height: 25rem;
@@ -37,6 +35,77 @@
 
 }
 
+.contact-button {
+  display: block;
+  width: 100%;
+  height: 50px;
+  max-width: 200px;
+  line-height: 50px;
+  position: relative;
+  margin: 50px 0;
+  animation: fadeInAnimation 1s 1.8s backwards;
+  white-space: nowrap;
+}
+
+.contact-button div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 15px 0 15px;
+}
+
+.contact-button span.bg {
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  left: -5%;
+  top: 0;
+  transform: skewX(-10deg);
+  transition: all 0.3s linear;
+}
+
+.contact-button:hover span.bg {
+  background: var(--color-tem);
+  width: 110%;
+  border-radius: 0 15px 0 15px;
+}
+
+.contact-button span.base {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0 15px 0 15px;
+  border: 1px solid var(--color-tem);
+}
+
+.contact-button span.text {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.contact-button:hover span.text {
+  color: #2d2b2b;
+}
+
+.submit-button {
+  margin-top: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #8a8484;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.submit-button:hover {
+  color: #2d2b2b;
+}
 .about__me-image{
   border-radius: 2rem;
   overflow: hidden;

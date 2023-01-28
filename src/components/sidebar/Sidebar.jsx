@@ -8,7 +8,7 @@ const Sidebar = ()=>{
         <div className="aside-wrapper">
           <Link to="/" className="logo-section">
             <h1 className="sidebar__logo">S</h1>
-            <span class="switch__color">Sakshi</span>
+            <span class="switch__color">Sakshi Goyat</span>
           </Link>
           <ul className="side-link">
             {sideBarMenu.map((link, index) => {
@@ -34,7 +34,7 @@ const Sidebar = ()=>{
           <div className="social-icon">
             {socialIcons.map((icons, index) => {
               return (
-                <a href={icons.url} key={index}>
+                <a href={icons.url} key={index} target="_blank">
                   {icons.icon}
                 </a>
               );

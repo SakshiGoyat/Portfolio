@@ -92,6 +92,26 @@ const socialIcons = [
 // skills card
 const skillSet = [
   {
+    icon: <RiReactjsLine className="skills-icon switch__color" />,
+    spanText: "React",
+    url: "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started",
+  },
+  {
+    icon: <FaNodeJs className="skills-icon switch__color" />,
+    spanText: "NodeJs",
+    url: "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs",
+  },
+  {
+    icon: <SiExpress className="skills-icon switch__color" />,
+    spanText: "Express",
+    url: "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Express",
+  },
+  {
+    icon: <DiMongodb className="skills-icon switch__color" />,
+    spanText: "MongoDB",
+    url: "",
+  },
+  {
     icon: <AiFillHtml5 className="skills-icon switch__color" />,
     spanText: "HTML5",
     url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
@@ -111,7 +131,6 @@ const skillSet = [
     spanText: "Saas",
     url: "",
   },
-
   {
     icon: <BsBootstrapFill className="skills-icon switch__color" />,
     spanText: "Bootstrap",
@@ -122,43 +141,6 @@ const skillSet = [
     icon: <SiJquery className="skills-icon switch__color" />,
     spanText: "JQuery",
     url: "",
-  },
-  {
-    icon: <FaGit className="skills-icon switch__color" />,
-    spanText: "Git",
-    url: "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/GitHub",
-  },
-  {
-    icon: <BsGithub className="skills-icon switch__color" />,
-    spanText: "GitHub",
-    url: "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/GitHub",
-  },
-  {
-    icon: <RiReactjsLine className="skills-icon switch__color" />,
-    spanText: "React",
-    url: "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started",
-  },
-
-  {
-    icon: <FaNodeJs className="skills-icon switch__color" />,
-    spanText: "NodeJs",
-    url: "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs",
-  },
-
-  {
-    icon: <DiMongodb className="skills-icon switch__color" />,
-    spanText: "MongoDB",
-    url: "",
-  },
-  {
-    icon: <SiExpress className="skills-icon switch__color" />,
-    spanText: "Express",
-    url: "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Express",
-  },
-  {
-    icon: <FiFigma className="skills-icon switch__color" />,
-    spanText: "Figma",
-    url: "https://figma.com",
   },
   {
     icon: <FaPython className="skills-icon switch__color" />,
@@ -181,13 +163,8 @@ const skillSet = [
     url: "",
   },
   {
-    icon: <SiAdobephotoshop className="skills-icon switch__color" />,
-    spanText: "Photoshop",
-    url: "",
-  },
-  {
-    icon: <SiCanva className="skills-icon switch__color" />,
-    spanText: "Canva",
+    icon: <DiMysql className="skills-icon switch__color" />,
+    spanText: "MySQL",
     url: "",
   },
   {
@@ -196,23 +173,43 @@ const skillSet = [
     url: "",
   },
   {
-    icon: <SiNetlify className="skills-icon switch__color" />,
-    spanText: "Netlify",
-    url: "",
-  },
-  {
-    icon: <DiMysql className="skills-icon switch__color" />,
-    spanText: "MySQL",
-    url: "",
-  },
-  {
     icon: <SiPostman className="skills-icon switch__color" />,
     spanText: "Postman",
     url: "",
   },
   {
+    icon: <FaGit className="skills-icon switch__color" />,
+    spanText: "Git",
+    url: "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/GitHub",
+  },
+  {
+    icon: <BsGithub className="skills-icon switch__color" />,
+    spanText: "GitHub",
+    url: "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/GitHub",
+  },
+  {
+    icon: <SiNetlify className="skills-icon switch__color" />,
+    spanText: "Netlify",
+    url: "",
+  },
+  {
     icon: <SiUbuntu className="skills-icon switch__color" />,
     spanText: "Ubuntu",
+    url: "",
+  },
+  {
+    icon: <FiFigma className="skills-icon switch__color" />,
+    spanText: "Figma",
+    url: "https://figma.com",
+  },
+  {
+    icon: <SiAdobephotoshop className="skills-icon switch__color" />,
+    spanText: "Photoshop",
+    url: "",
+  },
+  {
+    icon: <SiCanva className="skills-icon switch__color" />,
+    spanText: "Canva",
     url: "",
   },
 ];
