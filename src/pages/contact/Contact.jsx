@@ -12,6 +12,11 @@ import "./contact.scss";
 const Contact = () => {
   const [letterClass, setLetterClass] = React.useState("text-animate");
 
+    React.useEffect(() => {
+      setTimeout(() => {
+        setLetterClass("text-animate-hover");
+      }, 4000);
+    });
   const form = useRef();
 
   const sendEmail = (e) => {

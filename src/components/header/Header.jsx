@@ -6,6 +6,7 @@ import Sakshi from "../../assets/images/Sakshi_s_Resume.pdf";
 import Reveal from "react-reveal/Reveal";
 import React, { useState, useEffect } from "react";
 import { MdArrowDropDown } from "react-icons/md";
+import useScript from "./useScript";
 
 const nameArray = ["S", "a", "k", "s", "h", "i"];
 const jobArray = [
@@ -24,7 +25,8 @@ const jobArray = [
   "r",
 ];
 
-const Header = () => {
+const Header = ({url}) => {
+  useScript(url);
   const [letterClass, setLetterClass] = useState("text-animate");
 
   React.useEffect(() => {
@@ -34,84 +36,89 @@ const Header = () => {
   });
   return (
     <>
-      <Reveal>
-        <div className="fake-big">Home</div>
-      </Reveal>
-      <section className="section-1 header__container section__padding">
-        <main className="intro-page">
-          <h1>
-            <Blast letterClass={letterClass} arrayStr={["H", "o", "l", "a!"]} />{" "}
-          </h1>
-          <br />
-          <h2>
-            <Blast letterClass={letterClass} arrayStr={["I", "'", "m"]} />{" "}
-            <Blast
-              letterClass={letterClass}
-              arrayStr={nameArray}
-              indexLetter={15}
-            />
+      <div className="container">
+        <canvas id="canvas" />
+        <Reveal>
+          <div className="fake-big">Home</div>
+        </Reveal>
+        <section className="section-1 header__container section__padding">
+          <main className="intro-page">
+            <h1>
+              <Blast
+                letterClass={letterClass}
+                arrayStr={["H", "o", "l", "a!"]}
+              />{" "}
+            </h1>
             <br />
-            <Blast
-              letterClass={letterClass}
-              arrayStr={jobArray}
-              indexLetter={22}
-            />
-          </h2>
+            <h2>
+              <Blast letterClass={letterClass} arrayStr={["I", "'", "m"]} />{" "}
+              <Blast
+                letterClass={letterClass}
+                arrayStr={nameArray}
+                indexLetter={15}
+              />
+              <br />
+              <Blast
+                letterClass={letterClass}
+                arrayStr={jobArray}
+                indexLetter={22}
+              />
+            </h2>
 
-          <p className="text-desc">
-            <Blast
-              letterClass={letterClass}
-              arrayStr={[
-                "W",
-                "E",
-                "B ",
-                " ",
-                "D",
-                "E",
-                "V",
-                "E",
-                "L",
-                "O",
-                "P",
-                "E",
-                "R",
-                " ",
-                "U",
-                "I/",
-                "U",
-                "X",
-                " ",
-                "D",
-                "E",
-                "S",
-                "I",
-                "N",
-                "E",
-                "R",
-              ]}
-            />{" "}
-  
-            {/* WEB DEVELOPER, UI/UX DESIGNER */}
-          </p>
-          <Fade left>
-            <a
-              style={{ marginTop: "2rem" }}
-              href={Sakshi}
-              download
-              className="contact-button submit-button"
-            >
-              <div>
-                <span className="bg switch__bg"></span>
-                <span className="base switch__border-color"></span>
-                <span className="text">Download CV</span>
-              </div>
-            </a>
-          </Fade>
-        </main>
-        <div className="scroll__wrapper switch__color">
-          <MdArrowDropDown className="scroll__down switch__color" />
-        </div>
-      </section>
+            <p className="text-desc">
+              <Blast
+                letterClass={letterClass}
+                arrayStr={[
+                  "W",
+                  "E",
+                  "B ",
+                  " ",
+                  "D",
+                  "E",
+                  "V",
+                  "E",
+                  "L",
+                  "O",
+                  "P",
+                  "E",
+                  "R",
+                  " ",
+                  "U",
+                  "I/",
+                  "U",
+                  "X",
+                  " ",
+                  "D",
+                  "E",
+                  "S",
+                  "I",
+                  "N",
+                  "E",
+                  "R",
+                ]}
+              />{" "}
+              {/* WEB DEVELOPER, UI/UX DESIGNER */}
+            </p>
+            <Fade left>
+              <a
+                style={{ marginTop: "2rem" }}
+                href={Sakshi}
+                download
+                className="contact-button submit-button"
+              >
+                <div>
+                  <span className="bg switch__bg"></span>
+                  <span className="base switch__border-color"></span>
+                  <span className="text">Download CV</span>
+                </div>
+              </a>
+            </Fade>
+          </main>
+          <div className="scroll__wrapper switch__color">
+            <MdArrowDropDown className="scroll__down switch__color" />
+          </div>
+        </section>
+      </div>
     </>
   );
 };

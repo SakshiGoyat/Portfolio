@@ -3,14 +3,8 @@ import React from "react";
 // react-icons
 import { FiLinkedin, FiFigma } from "react-icons/fi";
 import { VscProject } from "react-icons/vsc";
-import {
-  BsBootstrapFill,
-  BsPersonLinesFill,
-  BsGithub,
-} from "react-icons/bs";
-import{
-  FaPython
-} from "react-icons/fa"
+import { BsBootstrapFill, BsPersonLinesFill, BsGithub } from "react-icons/bs";
+import { FaPython } from "react-icons/fa";
 import { RiContactsBookFill, RiReactjsLine } from "react-icons/ri";
 import {
   SiSass,
@@ -26,9 +20,14 @@ import {
   SiCplusplus,
 } from "react-icons/si";
 
-import {GiNotebook} from "react-icons/gi"
-import { GrGithub, GrTwitter} from "react-icons/gr";
-import { AiFillHtml5, AiOutlineConsoleSql, AiFillHome } from "react-icons/ai";
+import { GiNotebook } from "react-icons/gi";
+import { GrGithub, GrTwitter } from "react-icons/gr";
+import {
+  AiFillHtml5,
+  AiOutlineConsoleSql,
+  AiFillHome,
+  AiFillInstagram,
+} from "react-icons/ai";
 import { DiCss3, DiMongodb, DiJava, DiMysql } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaNodeJs, FaGit } from "react-icons/fa";
@@ -87,6 +86,10 @@ const socialIcons = [
   {
     icon: <FiLinkedin className="icon switch__color" />,
     url: "https://www.linkedin.com/in/sakshi-goyat-42743322a/",
+  },
+  {
+    icon: <AiFillInstagram className="icon switch__color" />,
+    url: "https://www.instagram.com/sakshi_goyat_14/",
   },
 ];
 // skills card

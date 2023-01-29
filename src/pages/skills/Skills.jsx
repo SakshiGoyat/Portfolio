@@ -30,6 +30,11 @@ const Skills = () => {
                 indexLetter={11}
               />
             </h1>
+            <p>
+              I love to learn new technologies, and this has helped to dive deep
+              into different fields and master the skills of developing agile
+              and scalable applications.
+            </p>
           </div>
         </article>
       </div>
