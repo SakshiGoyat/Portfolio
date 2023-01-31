@@ -25,7 +25,7 @@ const jobArray = [
   "r",
 ];
 
-const Header = ({url}) => {
+const Header = ({ url }) => {
   useScript(url);
   const [letterClass, setLetterClass] = useState("text-animate");
 
@@ -36,8 +36,8 @@ const Header = ({url}) => {
   });
   return (
     <>
+      <canvas id="canvas" />
       <div className="container">
-        <canvas id="canvas" />
         <Reveal>
           <div className="fake-big">Home</div>
         </Reveal>

@@ -1,14 +1,21 @@
-// .container{
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     color: white;
-//     height: 0;
-//     display: flex;
-//     justify-content: space-around;
-//     cursor: default;
-// }
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  // transform: translate(-50%, -50%);
+  // color: white;
+  // height: 0;
+  // display: flex;
+  // justify-content: space-around;
+  // cursor: default;
+}
+canvas {
+  z-index: 100;
+  position: absolute;
+  // top: 0;
+  // left: 0;
+}
 
 // .container > p{
 //     width: auto;
@@ -69,7 +76,6 @@
   letter-spacing: 2px;
   animation: fadeIn 1s 1.4s backwards;
 }
-
 
 .scroll__wrapper {
   display: flex;
