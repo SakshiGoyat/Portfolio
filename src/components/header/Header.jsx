@@ -99,20 +99,20 @@ const Header = ({ url }) => {
               />{" "}
               {/* WEB DEVELOPER, UI/UX DESIGNER */}
             </p>
-            <Fade left>
-              <a
-                style={{ marginTop: "2rem" }}
-                href={Sakshi}
-                download
-                className="contact-button submit-button"
-              >
-                <div>
-                  <span className="bg switch__bg"></span>
-                  <span className="base switch__border-color"></span>
-                  <span className="text">Download CV</span>
-                </div>
-              </a>
-            </Fade>
+              <Fade left>
+                <a
+                  style={{ marginTop: "2rem" }}
+                  href={Sakshi}
+                  download
+                  className="contact-button submit-button"
+                >
+                  <div>
+                    <span className="bg switch__bg"></span>
+                    <span className="base switch__border-color"></span>
+                    <span className="text">Download CV</span>
+                  </div>
+                </a>
+              </Fade>
           </main>
           <div className="scroll__wrapper switch__color">
             <MdArrowDropDown className="scroll__down switch__color" />
