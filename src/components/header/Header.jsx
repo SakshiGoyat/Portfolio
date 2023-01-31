@@ -6,7 +6,7 @@ import Sakshi from "../../assets/images/Sakshi_s_Resume.pdf";
 import Reveal from "react-reveal/Reveal";
 import React, { useState, useEffect } from "react";
 import { MdArrowDropDown } from "react-icons/md";
-import useScript from "./useScript";
+// import useScript from "./useScript";
 
 const nameArray = ["S", "a", "k", "s", "h", "i"];
 const jobArray = [
@@ -26,7 +26,7 @@ const jobArray = [
 ];
 
 const Header = ({ url }) => {
-  useScript(url);
+  // useScript(url);
   const [letterClass, setLetterClass] = useState("text-animate");
 
   React.useEffect(() => {
@@ -36,7 +36,7 @@ const Header = ({ url }) => {
   });
   return (
     <>
-      <canvas id="canvas" />
+      {/* <canvas id="canvas" /> */}
       <div className="container">
         <Reveal>
           <div className="fake-big">Home</div>

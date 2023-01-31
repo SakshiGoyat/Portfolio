@@ -3,10 +3,13 @@ import { Home, About, Contact, ProjectPage, ErrorPage, Skills, Experience } from
 
 import { Sidebar, ThemeTemplates } from "./components";
 import "./App.scss";
+import useScript from "./components/header/useScript";
 
 const App = ({url}) => {
+  useScript(url);
   return (
         <BrowserRouter>
+          <canvas id="canvas" />
           <Sidebar />
           <ThemeTemplates />
           <Routes>
